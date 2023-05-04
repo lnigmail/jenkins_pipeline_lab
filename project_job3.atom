@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    
+    <feed xmlns="http://www.w3.org/2005/Atom"><title>Jenkins:project_job3 (all builds)</title><link rel="alternate" type="text/html" href="http://10.100.102.52:8080/job/project_job3/"></link><updated>2023-05-04T17:06:03Z</updated><author><name>Jenkins Server</name></author><id>urn:uuid:903deee0-7bfa-11db-9fe1-0800200c9a66</id><entry><title>project_job3 project_job3 (stable)</title><link rel="alternate" type="text/html" href="http://10.100.102.52:8080/job/project_job3/1/"></link><id>tag:hudson.dev.java.net,2023:project_job3:1</id><published>2023-05-04T17:06:03Z</published><updated>2023-05-04T17:06:03Z</updated><content>job 3:
+--------
+Save all container information inside CONT.txt file and print it
+
+#!/bin/bash
+rm /home/jenkins/CONT.txt
+touch /home/jenkins/CONT.txt
+sudo echo -e "Container's ID: $GGG'N" > /home/jenkins/CONT.txt
+sudo echo -e "`sudo docker inspect $GGG | grep IPAddress | awk 'NR==2 {print $2}'`" >> /home/jenkins/CONT.txt
+echo "Done!, The project is complete"
+
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/project_job3
+[project_job3] $ /bin/bash /tmp/jenkins13103906765199144912.sh
+rm: cannot remove '/home/jenkins/CONT.txt': No such file or directory
+Done!, The project is complete
+Finished: SUCCESS</content></entry></feed>
