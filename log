@@ -1,12 +1,45 @@
-Started by user unknown or anonymous
+Started by upstream project "[8mha:////4OsvjSxSqkXrECkRhUhytk+You8xLw39XnNhOEiMrEj9AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6WflJ+gVF+VmpySXxQLahPgBfaccVxwAAAA==[0mproject_job1" build number [8mha:////4Kg3SRnVHCOafpWeFpp0bvLyWUGbemrUNLcOkhPx18iVAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYR/az8JP2Covys1OSSeCDbUN/QCABFohPSyQAAAA==[0m12
+originally caused by:
+ Started by user unknown or anonymous
 Running as SYSTEM
-Building in workspace /var/lib/jenkins/workspace/project_job1
-[project_job1] $ /bin/bash /tmp/jenkins13193230807020592181.sh
-1.txt
-2.txt
-3.txt
-4.txt
-5.txt
-Done, up next job2
-Triggering a new build of [8mha:////4OVmnC45Pbb/bydRK4LMTd7zrSZEnEqdBTpMDxmdDCmrAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6WflJ+gVF+VmpySXxQLaRPgCcOuo+xwAAAA==[0mproject_job2
+Building in workspace /var/lib/jenkins/workspace/project_job2
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+[project_job2] $ /bin/bash /tmp/jenkins5395174946182530304.sh
+Using default tag: latest
+latest: Pulling from library/nginx
+Digest: sha256:480868e8c8c797794257e2abd88d0f9a8809b2fe956cbfbc05dcc0bca1f7cd43
+Status: Image is up to date for nginx:latest
+docker.io/library/nginx:latest
+7888f9eee6de6f58021495bbbc1136b6b0362f79a7dfe86bc993de08af5af0cc
+docker: Error response from daemon: driver failed programming external connectivity on endpoint festive_margulis (53f71ac109ffe5bc8d820ce75a29c931ef11b8b8176fc0cd1ebfa3a1239e3608): Bind for 0.0.0.0:9000 failed: port is already allocated.
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   615  100   615    0     0  38437      0 --:--:-- --:--:-- --:--:-- 41000
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+html { color-scheme: light dark; }
+body { width: 35em; margin: 0 auto;
+font-family: Tahoma, Verdana, Arial, sans-serif; }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+Done, Upnext job3
+Triggering a new build of [8mha:////4FxEZHCrKQZS9+ejJGPkjrCtO+6Q0Ta7rlFb968wU7hlAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6WflJ+gVF+VmpySXxQLaxPgDdC/EnxwAAAA==[0mproject_job3
 Finished: SUCCESS
