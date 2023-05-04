@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
     
     <feed xmlns="http://www.w3.org/2005/Atom"><title>Jenkins:project_job1 (all builds)</title><link rel="alternate" type="text/html" href="http://10.100.102.52:8080/job/project_job1/"></link><updated>2023-05-04T15:45:53Z</updated><author><name>Jenkins Server</name></author><id>urn:uuid:903deee0-7bfa-11db-9fe1-0800200c9a66</id><entry><title>project_job1 #10 (stable)</title><link rel="alternate" type="text/html" href="http://10.100.102.52:8080/job/project_job1/10/"></link><id>tag:hudson.dev.java.net,2023:project_job1:10</id><published>2023-05-04T15:45:53Z</published><updated>2023-05-04T15:45:53Z</updated><content>Job1
--------
+---------
 Create new user called net4u
 Create new directory called net4u
 Put net4u user inside sudo group
