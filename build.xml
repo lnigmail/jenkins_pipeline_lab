@@ -5,27 +5,47 @@
       <causeBag class="linked-hash-map">
         <entry>
           <hudson.model.Cause_-UpstreamCause>
-            <upstreamProject>project_job1</upstreamProject>
-            <upstreamUrl>job/project_job1/</upstreamUrl>
-            <upstreamBuild>12</upstreamBuild>
+            <upstreamProject>project_job2</upstreamProject>
+            <upstreamUrl>job/project_job2/</upstreamUrl>
+            <upstreamBuild>3</upstreamBuild>
             <upstreamCauses>
-              <hudson.model.Cause_-UserIdCause/>
+              <hudson.model.Cause_-UpstreamCause>
+                <upstreamProject>project_job1</upstreamProject>
+                <upstreamUrl>job/project_job1/</upstreamUrl>
+                <upstreamBuild>12</upstreamBuild>
+                <upstreamCauses>
+                  <hudson.model.Cause_-UserIdCause/>
+                </upstreamCauses>
+              </hudson.model.Cause_-UpstreamCause>
             </upstreamCauses>
           </hudson.model.Cause_-UpstreamCause>
           <int>1</int>
         </entry>
       </causeBag>
     </hudson.model.CauseAction>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>GGG</name>
+          <description>Insert Container&apos;s ID:</description>
+          <value></value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>GGG</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
   </actions>
-  <queueId>18</queueId>
-  <timestamp>1683228623174</timestamp>
-  <startTime>1683228623181</startTime>
+  <queueId>19</queueId>
+  <timestamp>1683228633198</timestamp>
+  <startTime>1683228633214</startTime>
   <result>SUCCESS</result>
-  <duration>4636</duration>
+  <duration>463</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
-  <workspace>/var/lib/jenkins/workspace/project_job2</workspace>
+  <workspace>/var/lib/jenkins/workspace/project_job3</workspace>
   <hudsonVersion>2.375.2</hudsonVersion>
   <scm class="hudson.scm.NullChangeLogParser"/>
   <culprits class="java.util.Collections$UnmodifiableSet">
