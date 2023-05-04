@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    
+    <feed xmlns="http://www.w3.org/2005/Atom"><title>Jenkins:My_First_Pipeline (all builds)</title><link rel="alternate" type="text/html" href="http://10.100.102.52:8080/view/My_First_Pipeline/"></link><updated>2023-05-04T19:30:33Z</updated><author><name>Jenkins Server</name></author><id>urn:uuid:903deee0-7bfa-11db-9fe1-0800200c9a66</id><entry><title>project_job3 #4 (stable)</title><link rel="alternate" type="text/html" href="http://10.100.102.52:8080/view/My_First_Pipeline/job/project_job3/4/"></link><id>tag:hudson.dev.java.net,2023:project_job3:4</id><published>2023-05-04T19:30:33Z</published><updated>2023-05-04T19:30:33Z</updated></entry><entry><title>project_job2 #3 (stable)</title><link rel="alternate" type="text/html" href="http://10.100.102.52:8080/view/My_First_Pipeline/job/project_job2/3/"></link><id>tag:hudson.dev.java.net,2023:project_job2:3</id><published>2023-05-04T19:30:23Z</published><updated>2023-05-04T19:30:23Z</updated></entry><entry><title>project_job1 #12 (stable)</title><link rel="alternate" type="text/html" href="http://10.100.102.52:8080/view/My_First_Pipeline/job/project_job1/12/"></link><id>tag:hudson.dev.java.net,2023:project_job1:12</id><published>2023-05-04T19:30:12Z</published><updated>2023-05-04T19:30:12Z</updated></entry><entry><title>project_job3 #3 (stable)</title><link rel="alternate" type="text/html" href="http://10.100.102.52:8080/view/My_First_Pipeline/job/project_job3/3/"></link><id>tag:hudson.dev.java.net,2023:project_job3:3</id><published>2023-05-04T19:02:27Z</published><updated>2023-05-04T19:02:27Z</updated></entry><entry><title>project_job2 #2 (stable)</title><link rel="alternate" type="text/html" href="http://10.100.102.52:8080/view/My_First_Pipeline/job/project_job2/2/"></link><id>tag:hudson.dev.java.net,2023:project_job2:2</id><published>2023-05-04T19:02:17Z</published><updated>2023-05-04T19:02:17Z</updated></entry><entry><title>project_job1 #11 (stable)</title><link rel="alternate" type="text/html" href="http://10.100.102.52:8080/view/My_First_Pipeline/job/project_job1/11/"></link><id>tag:hudson.dev.java.net,2023:project_job1:11</id><published>2023-05-04T19:02:08Z</published><updated>2023-05-04T19:02:08Z</updated></entry><entry><title>project_job3 #2 (stable)</title><link rel="alternate" type="text/html" href="http://10.100.102.52:8080/view/My_First_Pipeline/job/project_job3/2/"></link><id>tag:hudson.dev.java.net,2023:project_job3:2</id><published>2023-05-04T17:21:13Z</published><updated>2023-05-04T17:21:13Z</updated><content>job 3:
+--------
+Save all container information inside CONT.txt file and print it
+
+#!/bin/bash
+rm /home/jenkins/CONT.txt
+touch /home/jenkins/CONT.txt
+sudo echo -e "Container's ID: $GGG\n" > /home/jenkins/CONT.txt
+sudo echo -e "`sudo docker inspect $GGG | grep IPAddress | awk 'NR==2 {print $2}'`" >> /home/jenkins/CONT.txt
+echo "Done!, The project is complete"
+
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/project_job3
+[project_job3] $ /bin/bash /tmp/jenkins522189534841988152.sh
+Done!, The project is complete
+Finished: SUCCESS</content></entry><entry><title>project_job2 #1 (stable)</title><link rel="alternate" type="text/html" href="http://10.100.102.52:8080/view/My_First_Pipeline/job/project_job2/1/"></link><id>tag:hudson.dev.java.net,2023:project_job2:1</id><published>2023-05-04T16:05:00Z</published><updated>2023-05-04T16:05:00Z</updated><content>job2:
+Pull nginx image
+Deploy a container with specific port
+Check connectivity with curl
+
+#!/bin/bash
+sudo docker pull nginx 2>/dev/null
+sudo docker run -d -p 9000:80 nginx
+sudo curl http://10.100.102.52:9000
+echo "Done, Upnext job3"
+
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/project_job2
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[project_job2] $ /bin/bash /tmp/jenkins6057292151665491892.sh
+Using default tag: latest
+latest: Pulling from library/nginx
+9e3ea8720c6d: Pulling fs layer
+bf36b6466679: Pulling fs layer
+15a97cf85bb8: Pulling fs layer
+9c2d6be5a61d: Pulling fs layer
+6b7e4a5c7c7a: Pulling fs layer
+8db4caa19df8: Pulling fs layer
+9c2d6be5a61d: Waiting
+6b7e4a5c7c7a: Waiting
+8db4caa19df8: Waiting
+15a97cf85bb8: Verifying Checksum
+15a97cf85bb8: Download complete
+9c2d6be5a61d: Verifying Checksum
+9c2d6be5a61d: Download complete
+6b7e4a5c7c7a: Verifying Checksum
+6b7e4a5c7c7a: Download complete
+8db4caa19df8: Verifying Checksum
+8db4caa19df8: Download complete
+bf36b6466679: Verifying Checksum
+bf36b6466679: Download complete
+9e3ea8720c6d: Verifying Checksum
+9e3ea8720c6d: Download complete
+9e3ea8720c6d: Pull complete
+bf36b6466679: Pull complete
+15a97cf85bb8: Pull complete
+9c2d6be5a61d: Pull complete
+6b7e4a5c7c7a: Pull complete
+8db4caa19df8: Pull complete
+Digest: sha256:480868e8c8c797794257e2abd88d0f9a8809b2fe956cbfbc05dcc0bca1f7cd43
+Status: Downloaded newer image for nginx:latest
+docker.io/library/nginx:latest
+3d1c018641d9e8044410bc0dee1ba2c1572627a0b3e829dd8dc3f70e2e5a345b
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   615  100   615    0     0   600k      0 --:--:-- --:--:-- --:--:--  600k
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+&lt;title>Welcome to nginx!&lt;/title>
+&lt;style>
+html { color-scheme: light dark; }
+body { width: 35em; margin: 0 auto;
+font-family: Tahoma, Verdana, Arial, sans-serif; }
+&lt;/style>
+&lt;/head>
+&lt;body>
+&lt;h1>Welcome to nginx!&lt;/h1>
+&lt;p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.&lt;/p>
+
+&lt;p>For online documentation and support please refer to
+&lt;a href="http://nginx.org/">nginx.org&lt;/a>.&lt;br/>
+Commercial support is available at
+&lt;a href="http://nginx.com/">nginx.com&lt;/a>.&lt;/p>
+
+&lt;p>&lt;em>Thank you for using nginx.&lt;/em>&lt;/p>
+&lt;/body>
+&lt;/html>
+Done, Upnext job3
+Finished: SUCCESS</content></entry><entry><title>project_job1 #10 (stable)</title><link rel="alternate" type="text/html" href="http://10.100.102.52:8080/view/My_First_Pipeline/job/project_job1/10/"></link><id>tag:hudson.dev.java.net,2023:project_job1:10</id><published>2023-05-04T15:45:53Z</published><updated>2023-05-04T15:45:53Z</updated><content>Job1
+-------
+Create new user called net4u
+Create new directory called net4u
+Put net4u user inside sudo group
+Create 5 files insede net4u folder and tgz them
+
+sudo useradd net4u
+sudo usermod -a -G sudo net4u
+sudo mkdir /home/jenkins/net4u
+cd /home/jenkins/net4u
+sudo touch 1.txt 2.txt 3.txt 4.txt 5.txt
+sudo tar -zcvf net4u.tgz 1.txt 2.txt 3.txt 4.txt 5.txt
+echo "Done, up next job2"</content></entry></feed>
