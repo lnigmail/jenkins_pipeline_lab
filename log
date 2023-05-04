@@ -1,0 +1,12 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/project_job1
+[project_job1] $ /bin/bash /tmp/jenkins13193230807020592181.sh
+1.txt
+2.txt
+3.txt
+4.txt
+5.txt
+Done, up next job2
+Triggering a new build of [8mha:////4OVmnC45Pbb/bydRK4LMTd7zrSZEnEqdBTpMDxmdDCmrAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6WflJ+gVF+VmpySXxQLaRPgCcOuo+xwAAAA==[0mproject_job2
+Finished: SUCCESS
